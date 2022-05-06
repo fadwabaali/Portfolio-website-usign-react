@@ -1,0 +1,103 @@
+/*=========== CLASSES =============*/
+.section{
+    position: relative;
+    padding: 5.5rem 0 1rem;
+    margin-top: 2rem;
+  }
+  
+.container{
+    max-width: 968px;
+    margin-left: $mg7;
+    margin-right: $mg7;
+    margin-top: $mg8;
+}
+  
+.title__sec{
+    background: $titleColor;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: $h1FontSize;
+    font-weight: 800;
+    margin-bottom: $mg8;
+    word-break: break-all;
+}
+  
+.subtitle__sec{
+    position: relative;
+    color: $subtitleColor;
+    font-size: $h2FontSize;
+    font-weight: 800;
+    margin-bottom: $mg8;
+    word-break: break-all;
+
+    &::before{
+      content: '';
+      width: 35px;
+      height: 3px;
+      background: $titleColor;
+      position: absolute;
+      top: -10px;
+    }
+}
+
+.bigtitle__sec{
+  background: $titleColor;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+  margin-bottom: $mg6;
+  font-size: $bigFontSize
+}
+
+.btn{
+    display: inline-block;
+    padding: $mg8 $mg7;
+    border-radius: 5px;
+    text-align: center;
+    color: #FFFFFF;
+    background: $btnColor;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.btn__secondary{
+  background: transparent;
+  transition: all .5s ease;
+  
+  &:hover{
+    background: $titleColor;
+  }
+}
+
+.btn__spec{
+    background: $btnColorAlt;
+}
+
+@media screen and (min-width: 800px) {
+    .container{
+      max-width: 1000px;
+      margin-right: $mg1;
+      margin-left: $mg1;
+      margin-top: $mg7;
+    }
+      
+    .section{
+      margin-top: 4rem;
+    }
+} 
+  
+@media screen and (min-width: 1200px) {
+    .container{
+      max-width: 1000px;
+      margin-left: 10rem;
+      margin-right: 10rem;
+      margin-top: $mg7;     
+    }
+}  
+
+@media screen and (min-width: 1400px) {
+  body{   
+    @include flexCenter();
+  }
+}  

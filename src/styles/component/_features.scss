@@ -1,0 +1,38 @@
+.features__sec{
+    .features__container{
+        @include grid(1,2rem);
+        place-items: center;
+
+        .features__img{
+            img{
+                max-width: 300px;
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        .features__data{
+            span:nth-child(1){
+                color: rgba(113, 229, 255, 1);
+            }
+
+            span:last-child{
+                color: $btnColorAlt;
+            }
+            
+        }
+
+    }
+}
+@media screen and (min-width:765px){
+    .features__sec{ 
+        .features__container{
+            @include grid(2,2rem);
+            .features__img{
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+        }
+    }
+}

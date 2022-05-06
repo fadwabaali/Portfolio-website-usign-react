@@ -1,0 +1,14 @@
+.contact__sec{
+    .contact__container{
+        text-align: center;
+        
+        .secondary__btn{
+            background: transparent;
+            color: #fff;
+            border: 1px solid #fff;
+            cursor: pointer;
+            text-align: center;
+            padding: $mg8 $mg8;
+        }
+    }
+}

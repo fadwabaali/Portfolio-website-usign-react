@@ -1,0 +1,43 @@
+.banner__sec{
+    .banner__container{
+        background: $titleColor;
+        padding: $mg4;
+        border-radius: 10px;
+        @include flex(column, 2rem);
+
+        .banner__data{
+            flex: 2;
+            color: #000;
+            p{
+                color: #000;
+            }
+        }
+
+        .banner__btn{
+            flex: .5;
+            background-color: #000;
+            padding: $mg8 $mg7;
+            border-radius: 50px;
+            text-align: center;
+            color: #fff;
+            font-size: $h3FontSize;
+            cursor: pointer;
+        }
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .banner__sec{
+        .banner__container{
+            @include flex(row, 2rem);
+
+            .banner__btn{
+                padding: $mg8 $mg9;
+            }
+        }
+    
+    }
+    
+
+}

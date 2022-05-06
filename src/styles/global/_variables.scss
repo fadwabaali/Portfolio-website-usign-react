@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,800&display=swap');
+/*========== COLOR ===========*/
+$primaryColor: rgba(15, 66, 121, 1);
+$primaryColorAlt:rgba(27, 120, 222, 1);
+$secondaryColor: rgba(5, 45, 86, 1);
+$bodyColor: #040C18;
+$bg2: #031B34;
+$titleColor: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+$subtitleColor: rgba(255, 255, 255, 1);;
+$textColor: rgba(129, 175, 221, 1);
+$boxColor: rgba(4, 44, 84, 1);
+$btnColor: rgba(255, 72, 32, 1);
+$btnColorAlt : rgba(255, 138, 113, 1);
+
+/*========== FONT-SIZE ===========*/
+$bigFontSize: 2.5rem;
+$h1FontSize: 1.5rem;
+$h2FontSize: 1.25rem;
+$h3FontSize: 1rem;
+$normalFontSize: .938rem;
+$smallFontSize: .813rem;
+$smallerFontSize: .75rem;
+$fontBody: 'poppins' , sans-serif;
+
+/*==== MARGIN && PADDING ====*/
+$mg1: 5rem;
+$mg2: 4rem;
+$mg3: 3.5rem;
+$mg4: 3rem;
+$mg5: 2.5rem;
+$mg6: 2rem;
+$mg7: 1.5rem;
+$mg8: 1rem;
+$mg9: .5rem;
+
+/* Responsive typography */
+@media screen and (min-width: 968px) {
+    $bigFontSize: 3.8rem;
+    $h1FontSize: 2.25rem;
+    $h2FontSize: 1.5rem;
+    $h3FontSize: 1.25rem;
+    $normalFontSize: 1rem;
+    $smallFontSize: .875rem;
+    $smallerFontSize: .813rem;
+    
+}

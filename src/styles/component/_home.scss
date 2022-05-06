@@ -1,0 +1,103 @@
+.home__sec{
+    margin-top: 4rem;
+
+    .home__container{
+        @include flex(column,1rem);
+        justify-content: center;
+        align-items: center;
+
+        .home__data{
+          
+            .home__input{
+                @include flex(row,0);
+                align-items: center;
+                justify-content: flex-start;
+                margin-bottom: $mg8;
+                input {
+                    background: #052D56;
+                    padding: $mg8 $mg7;
+                    color: #FFFFFF;
+                    width: 60%;
+                    margin-bottom: 1rem;
+                }
+
+                button{
+                    width: 40%;
+                    margin-top: -18px;
+                    border-radius: 0;
+                }
+            }
+
+            .home__users{
+                @include flex(column,1rem);
+                align-items: flex-start;
+                margin-bottom: $mg8;
+
+                img{
+                    width: 150px;
+                    height: initial;
+                }
+            }
+
+            
+           
+        } 
+        .home__img{
+                img{
+                    width: 350px;
+                }
+            }
+
+    }
+}
+
+@media only screen and (min-width: 700px){
+    .home__sec{
+        .home__container{
+            @include flex(row,1.5rem);
+            
+            .home__data{
+                flex: 2;
+            }
+
+            .home__img{
+                flex: 1;
+                img{
+                    width: 350px;
+                }
+            }
+        }
+    }
+    
+}
+
+@media only screen and (min-width: 1000px){
+    .home__sec{
+        .home__container{
+            .home__img{
+                img{
+                    width: 500px;
+                }
+            }
+        }
+    }
+    
+}
+
+@media only screen and (min-width: 1200px){
+    .home__sec{
+        .home__container{
+            .home__data{
+                .home__users{
+                    @include flex(row,1rem);
+                }
+            }
+            .home__img{
+                img{
+                    width: 600px;
+                }
+            }
+        }
+    }
+    
+}

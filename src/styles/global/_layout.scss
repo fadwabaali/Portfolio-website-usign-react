@@ -1,0 +1,18 @@
+
+@mixin flexCenter(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin grid($num,$gap){
+    display: grid;
+    grid-template-columns: repeat($num,1fr);
+    gap: $gap;
+}
+
+@mixin flex($direction,$gap){
+    display: flex;
+    flex-direction: $direction;
+    gap: $gap;
+}

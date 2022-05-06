@@ -1,0 +1,25 @@
+.companies__sec{
+    .companies__container{
+        @include grid(2,1rem);
+        place-items: center;
+
+    }
+}
+
+@media only screen and (min-width: 400px){
+    .companies__sec{
+        .companies__container{
+            @include grid(3,1rem);
+        }
+    }
+    
+}
+
+@media only screen and (min-width: 600px){
+    .companies__sec{
+        .companies__container{
+            @include grid(5,1rem);
+        }
+    }
+    
+}

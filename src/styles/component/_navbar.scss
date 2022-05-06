@@ -1,0 +1,108 @@
+.header__sec{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 3rem;
+    z-index: 1;
+    nav{
+        position: relative;
+        @include flex(row,2rem);
+        justify-content: space-between;
+        align-items: center;
+
+        .logo__sec{
+            svg{
+                width: 80px;
+                height: 80px;
+            }
+        }
+
+        .nav__container{
+            @include flex(column,1rem);
+            align-items: center;
+            justify-content: center;
+            width: 80%;
+            height: 80vh;
+            background-color: $primaryColorAlt;
+            position: fixed;
+            top: 0;
+            right: -100%;
+            border-bottom-left-radius: 10px;
+            border-top-left-radius: 10px;
+            transition: all .5s ease;
+            box-shadow: 0 3px 10px #153453;
+        
+            .nav__list{
+                @include flex(column,1rem);
+
+                .nav__item{
+                    .nav__link{
+                        color: $subtitleColor;
+                        font-size: $normalFontSize;
+                        cursor: pointer;
+                        transition: all 1s ease;
+
+                        &:hover{
+                            background: $titleColor;
+                            background-clip: text;
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                        }
+                    }
+                }
+            }
+
+            .button{
+                @include flex(row,1rem);
+            }
+        }
+
+        .nav__open{
+            right: 0;
+        }
+
+        .menu__toggler{
+            position: absolute;
+            right: 50px;
+            cursor: pointer;
+            z-index: 1;
+        }
+    }
+}
+
+/*=========== NAV__MEDIA__QUERY ===========*/
+
+@media screen and (min-width:850px){
+    
+    .header__sec{
+        nav{
+            flex-direction: row;
+            gap: 2rem;
+            .nav__container{
+                position: absolute;
+                right: 0%;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                border: none;
+                background: transparent;
+                flex-direction: row;
+                box-shadow: none;
+
+                .nav__list{
+                    @include flex(row,1rem);
+
+                }
+            }
+    
+            .menu__toggler{
+                display: none;
+             }
+            
+        }
+    }
+    
+    
+}
